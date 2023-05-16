@@ -1,0 +1,30 @@
+//<!DOCTYPE html>
+//<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/estilosForm.css">
+</head>
+<body>
+   
+    <!--FORMULARIO---->
+    <form class="form" action="guardarRegistro.php" method="post">
+        
+        <!--TITULO------------------------>
+        <h1 class="titulo">Registrarse</h1>
+        
+        <!--CAJAS-DE-ENTRADA-DE-DATOS------------------------------------------------>
+        <input class="cajas" name="username" type="text" placeholder="Placa" required maxlength="30">
+        <input class="cajas" name="password" type="password" placeholder="Password" required maxlength="30">
+        <input class="cajas" name="roles_id" type="text" placeholder="Roles ID" required maxlength="30">
+            
+       
+        <!--BOTON-DE-REGISTRARSE-------------------------->
+        <input type="submit" class="btn" value="REGISTRAR">
+        
+        
+    </form>
+    
+   
+</body>
+</html>
