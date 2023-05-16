@@ -7,36 +7,9 @@
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">	
 
-	<style> 
-	#div1{
-	  width: 100px;
-	  height: 50px;
-	  font-weight: bold;
-	  position: relative;
-	  animation: mymove 5s infinite;
-	  text-align: center;
-	  font-size: 30px;
-	}
-
-	#div1 {animation-timing-function: FRANCISCO OCAÑA - EUNICE COYAGO;}
-
-	@keyframes mymove {
-	  from {left: 0px;}
-	  to {left: 300px;}
-	}
-</style>
 </head>
 <body style="background-image: url('images/fondo.jpg');  background-repeat:no-repeat; background-size: 95rem;">
 
-		<div class="container text-center" style="margin-top:5%;">
-		<br>
-		<br>
-			<h1>Universidad de las Fuerzas Armadas - ESPE</h1>
-			<h3>Desarrollo Web para Integración</h3>
-			<h3>NRC: 10050</h3>
-			<h3>INTEGRANTES</h3>
-			<div1 id="div1">FRANCISCO OCAÑA - EUNICE COYAGO</div1>
-		</div>
 		<div class="container">
 	<?php
 
@@ -66,10 +39,10 @@
 			
        // PARTE III	
 		}else{
-			    echo "<br>PETICION POST <br>";
+			    /*echo "<br>PETICION POST <br>";
 				echo "<pre>";
 					print_r($_POST);
-				echo "</pre>";
+				echo "</pre>";*/
 		
 			if(isset($_POST['Guardar']) && $_POST['op']=="new"){
 				$v->save_vehiculo();
